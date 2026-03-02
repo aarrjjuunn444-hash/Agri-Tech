@@ -1,0 +1,67 @@
+*{
+    margin: 19;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:url("images/register.jpg")no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 480px;
+    background:blur(12px);
+     backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(11, 34, 1, 0.893);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+input, select{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.radio-group label{
+    display: flex;
+    align-items: bottom;
+    font-size: 15px;
+    color: #000;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #1e88e5;
+    color: rgb(241, 245, 248);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #105eb7;
+}

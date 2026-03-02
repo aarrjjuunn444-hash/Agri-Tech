@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0">
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <servlet-class>ResetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <url-pattern>/ResetPasswordServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddMedicineServlet</servlet-name>
+        <servlet-class>AddMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMedicineServlet</servlet-name>
+        <url-pattern>/AddMedicineServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddDiseaseServlet</servlet-name>
+        <servlet-class>AddDiseaseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDiseaseServlet</servlet-name>
+        <url-pattern>/AddDiseaseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RequestInfoServlet</servlet-name>
+        <servlet-class>RequestInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestInfoServlet</servlet-name>
+        <url-pattern>/RequestInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteRequestServlet</servlet-name>
+        <servlet-class>DeleteRequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteRequestServlet</servlet-name>
+        <url-pattern>/DeleteRequestServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogUsageServlet</servlet-name>
+        <servlet-class>LogUsageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogUsageServlet</servlet-name>
+        <url-pattern>/LogUsageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchSuggestionServlet</servlet-name>
+        <servlet-class>SearchSuggestionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchSuggestionServlet</servlet-name>
+        <url-pattern>/SearchSuggestionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddReviewServlet</servlet-name>
+        <servlet-class>AddReviewServlet</servlet-class> </servlet>
+    <servlet-mapping>
+        <servlet-name>AddReviewServlet</servlet-name>
+        <url-pattern>/AddReviewServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
