@@ -11,5 +11,5 @@ COPY . /usr/local/tomcat/webapps/ROOT/
 
 # 4. Expose port
 EXPOSE 8080
-
-CMD sh -c "sed -i \"s/port=\\\"8080\\\"/port=\\\"$PORT\\\"/\" /usr/local/tomcat/conf/server.xml && catalina.sh run"
+ENV PORT=8080
+CMD ["sh", "-c", "sed -i 's/8080/${PORT}/g' /usr/local/tomcat/conf/server.xml && catalina.sh run"]
