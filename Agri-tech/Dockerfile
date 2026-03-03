@@ -7,10 +7,10 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 ADD https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar /usr/local/tomcat/lib/
 
 # 3. Copy your web content. 
-# We use '.' to copy everything from the Root Directory we set in Railway.
+# We use '*' to ensure we grab everything inside the WebContent folder
 COPY WebContent/ /usr/local/tomcat/webapps/ROOT/
 
-# 4. Railway uses port 8080 for Tomcat by default
+# 4. Set the Port
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
