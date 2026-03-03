@@ -11,7 +11,7 @@ ADD https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.28/mysql-conne
 
 # 4. Copy your web content
 # IMPORTANT: Use '.' to copy the CONTENTS of WebContent, not the folder itself
-COPY /usr/local/tomcat/webapps/ROOT/
+COPY webcontent/ . /usr/local/tomcat/webapps/ROOT/
 
 # 5. Set the Port (Railway expects 8080 by default for Tomcat)
 EXPOSE 8080
